@@ -9,6 +9,8 @@ def create_web_fs():
     basedir = selected_path
     print(basedir)
 
+    with open(os.path.join(basedir, 'index.html'), 'w') as f:
+        pass
     scripts_folder = basedir + "/scripts"
     try:
         os.mkdir(scripts_folder)
